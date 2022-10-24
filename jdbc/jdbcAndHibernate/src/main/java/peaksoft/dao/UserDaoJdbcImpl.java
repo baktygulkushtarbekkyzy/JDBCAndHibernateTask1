@@ -75,28 +75,7 @@ public class UserDaoJdbcImpl implements UserDao {
             e.printStackTrace();
         }
         return userList;
-
     }
-
-//    public static void getAllData(Integer num){
-//        String query = """
-//                select * from info
-//                where id > ?;
-//                """;
-//
-//        try (Connection connection = ConnectionUtil.getConnection();
-//             PreparedStatement prepareStatement = connection.prepareStatement(query)) {
-//            prepareStatement.setInt(1, num);
-//            ResultSet resultSet = prepareStatement.executeQuery();
-//            while(resultSet.next()){
-//                System.out.println(resultSet.getInt("id"));
-//                System.out.println(resultSet.getString("name"));
-//                System.out.println("---------------");
-//            }
-//        } catch (SQLException e) {
-//            throw new RuntimeException(e);
-//        }
-//    }
 
     public void cleanUsersTable() {
         String clean = "delete  from users ";

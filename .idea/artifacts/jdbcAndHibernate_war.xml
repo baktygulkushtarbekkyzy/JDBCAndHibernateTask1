@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="jdbcAndHibernate.war">
+    <root id="archive" name="jdbcAndHibernate-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="jdbcAndHibernate:war exploded" />
     </root>
   </artifact>
